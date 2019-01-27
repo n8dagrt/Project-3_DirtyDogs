@@ -84,13 +84,13 @@ def upload_file():
                 # loop over the results and add them to the list of
                 # returned predictions
                 for (imagenetID, label, prob) in results[0]:
-                    r = {"label": label, "probability": float(prob)}
+                    r = {"label": label.lower().replace("_","-"), "probability": float(prob)}
                     data["predictions"].append(r)
 
                 # indicate that the request was a success
                 data["success"] = True
 
-        return jsonify(data)
+        return render_template("results.html", data=data)
 
 @app.route("/Capture/")
 def capture(): 
