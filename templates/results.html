@@ -34,9 +34,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Search -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Whats the breed?</h1>
+  <h1 class="w3-margin w3-jumbo">We found your dog!!!!</h1>
   <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-      <h3>Dog's breed is likely a {{data.predictions[0].label.replace("-"," ")}}.</h3>
+      <h3 class="w3-xxlarge">Your dog looks like a {{data.predictions[0].label.replace("-"," ")}}.</h3>
       <a href="https://www.adoptapet.com/s/adopt-a-{{data.predictions[0].label}}">Adopt this dog here!!</a>       
   </div>
 </header>
