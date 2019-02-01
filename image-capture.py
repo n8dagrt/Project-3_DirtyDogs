@@ -46,6 +46,10 @@ def search():
 def image_capture():
     return render_template("imagecapture.html")
 
+@app.route("/resources")
+def resources():
+    return render_template("resources.html")
+
 @app.route('/file', methods=['GET', 'POST'])
 def upload_file():
     data = {"success": False}

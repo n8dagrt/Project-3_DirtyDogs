@@ -19,9 +19,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-    <a href="/search" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Search</a>
+    <a href="/search" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Search</a>
     <a href="/imagecapture" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Take A Picture</a>
-    <a href="/resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+    <a href="/resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Resources</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -34,14 +34,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Search -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Whats the breed?</h1>
+  <h1 class="w3-margin w3-jumbo">Resources</h1>
   <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-      <img src="{{ url_for('static', filename='images/bs.jpg') }}" alt="bs image"></img>
-      <h1>Upload Your Doggie Pic Below</h1>
-    <form method=post enctype=multipart/form-data action=/file>
-      <p><input type=file name=file>
-         <input type=submit value=Upload>
-    </form>
+    <ul>
+      <li><a href="https://www.rover.com/" class="w3-xxlarge">Rover The Dog People</a> </li>
+        <P>If your at work, out of town or on vacation, Rover helps to find the perfect pet sitter near you.</P>
+      <li><a href="https://www.rover.com/blog/" class="w3-xxlarge">The Dog People Rover Blog</a> </li>
+        <P>The Dog People blog (powered by Rover) a one-stop shop for cute dog stories, health and wellness advice, awesome dog lifestyle tips, training articles, and so much more.</P>
+      <li><a href="https://www.akc.org/" class="w3-xxlarge">American Kennel Club</a> </li>
+        <P>American Kennel Club is the encyclopedia of dog breeds on the Internet. When you want to know more about the breed(s) that makes up your dog, go to the American Kennel Club!</P>
+      <li><a href="https://keras.io/" class="w3-xxlarge">Keras</a> </li>
+      <P>Keras: The Python Deep Learning library. Learn about the machine learning library use to make this site here.</P>
+    </ul>        
   </div>
 </header>
 
