@@ -102,7 +102,7 @@ def capture():
 
         cv2.imshow('frame', rgb)
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            out = cv2.imwrite('capture.jpg', frame)
+            out = cv2.imwrite('static/uploads/capture.jpg', frame)
             break
     
     cap.release()
