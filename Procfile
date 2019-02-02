@@ -1,1 +1,1 @@
-web: gunicorn app:images-capture
+web: gunicorn app:app
